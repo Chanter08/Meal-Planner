@@ -1,0 +1,18 @@
+C:\Users\geord\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\geord\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\geord\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\geord\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Meal Planner.csprojAssemblyReference.cache
+C:\Users\geord\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Main.resources
+C:\Users\geord\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\geord\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Meal Planner.csproj.GenerateResource.cache
+C:\Users\geord\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\geord\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\geord\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Firebase.dll
+C:\Users\geord\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\LiteDB.dll
+C:\Users\geord\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\geord\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Reactive.dll
+C:\Users\geord\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Firebase.xml
+C:\Users\geord\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\LiteDB.xml
+C:\Users\geord\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\geord\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Reactive.xml
+C:\Users\geord\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Meal Planner.csproj.CopyComplete
