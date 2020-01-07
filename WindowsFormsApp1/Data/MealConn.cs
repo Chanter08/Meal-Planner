@@ -25,6 +25,7 @@ namespace WindowsFormsApp1
             public string Name { get; set; }
             public string MealDesc { get; set; }
             public string Time { get; set; }
+            public string Image { get; set; }
         }
         public MealConn()
         {
@@ -46,7 +47,7 @@ namespace WindowsFormsApp1
                 Main.mealList.Add(
                    new Meal
                    {
-                       Name = result.Key,
+                       Name = result.Object.Name,
                        MealDesc = result.Object.MealDesc,
                        Time = result.Object.Time
                    }); ;

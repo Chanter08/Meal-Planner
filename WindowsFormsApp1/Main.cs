@@ -19,16 +19,20 @@ namespace WindowsFormsApp1
         public Main()
         {
             InitializeComponent();
+            dateTimePicker1.Format = DateTimePickerFormat.Short;
+            dateTimePicker2.Format = DateTimePickerFormat.Time;
             GetMeals();
         }
 
         private void GetMeals()
         {
-            listView1.View = View.Details;
-            listView1.Columns.Add("Meal");
-            listView1.Columns.Add("Description");
-            listView1.Columns.Add("Time Taken");
-            listView1.GridLines = true;
+            listMeals.Columns.Clear();
+            listMeals.Rows.Clear();
+            listMeals.Columns.Add("Meal","Meal");
+            listMeals.Columns.Add("Description","Description");
+            listMeals.Columns.Add("Time Eaten","Time Eaten");
+            //dt.Columns.Add("Image",typeof(Image));
+           
 
             mealList = new List<Meal>();
 
@@ -42,8 +46,34 @@ namespace WindowsFormsApp1
 
             foreach (Meal m in mealList)
             {
-                listView1.Items.Add(new ListViewItem(new string[] { m.Name, m.MealDesc, m.Time }));
+                listMeals.Rows.Add(new string[] { m.Name, m.MealDesc, m.Time });
             }
+        }
+
+        private void Add_Click(object sender, EventArgs e)
+        {
+            MealConn conn = new MealConn();
+            Meal newMeal = new Meal();
+
+            newMeal.Name = txtMeal.Text;
+            newMeal.MealDesc = txtDesc.Text;
+            newMeal.Time = dateTimePicker1.Value.ToShortDateString() + " " + dateTimePicker2.Value.Hour.ToString() + ":"+ dateTimePicker2.Value.Minute.ToString();
+
+            Task.Run(() => conn.Insert(newMeal)).Wait();
+
+            foreach (Control c in tabPage1.Controls)
+            {
+                if (c is TextBox)
+                {
+                    c.Text = "";
+                }
+
+                dateTimePicker1.Value = DateTime.Today;
+
+                dateTimePicker2.Value = DateTime.Now;
+            }
+
+            GetMeals();
         }
     }
 }
